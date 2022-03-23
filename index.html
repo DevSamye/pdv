@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDAS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <ul>
+            <li>
+                <h1>Gestão de vendas</h1>
+            </li>
+            <li>
+                <h2>venda de pizzas</h2>
+            </li>
+        </ul>
+    </header>
+
+
+    <section>
+       
+        <form>
+            <h3>selecione a pizza vendida</h3>
+            <ul>
+                <li><input type="radio" id="mussarela" name="pizzas">
+                    <label for="mussarela">Mussarela</label>
+                </li>
+                <li><input type="radio" id="mista" name="pizzas">
+                    <label for="mista">Mista</label>
+                </li>
+                <li><input type="radio" id="calabresa" name="pizzas">
+                    <label for="calabresa">Calabresa</label>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <section>
+        <button id="venda">venda</button> <button id="estorno">estorno</button>
+    </section>
+    <section id="table">
+        <table>
+            <tr>
+                <th>sabores </th>
+                <th>quantidade </th>
+                <th>valores</th>
+            </tr>
+            <tr>
+                <td>mussarela</td>
+                <td id="resultadoMussarela"></td>
+                <td id="vendaMussarela"> </td>
+            </tr>
+            <tr>
+                <td>mista</td>
+                <td id="resultadoMista"></td>
+                <td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>calabresa</td>
+                <td id="resultadoCalabresa"></td>
+                <td id="vendaCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+    </section>
+    <section>
+        <button id="export">planilha</button>
+    </section>
+
+        <script src="tableToExcel.js"></script>
+        <script src="javascript.js"></script>
+
+</body>
+
+</html>
